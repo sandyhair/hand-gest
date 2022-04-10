@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Hand Gesture App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <center>
+            <br>
+<div id="div1111" class="btn btn-success">
+    <h1>Web Gesture App</h1>
+    <span id="1">&#128070;</span>
+    <span id="2">&#128076;</span>
+    <span id="3">&#128400;</span>
+    <span id="4">&#129304;</span>
+    <span id="5">&#9994;</span>
+    <span id="6">&#128079;</span>
+</div>
+
+<br><br>
+<h4>Take a selfie of a gestsure to know about its meaning!</h4>
+<br>
+<h5>On the following gestures the model is trained-</h5>
+<div id="gestures">
+    <span id="g1">&#128075;</span>
+    <h7>|</h7>
+    <span id="g2">&#129304;</span>
+    <h7>|</h7>
+    <span id="g3">&#128077;</span>
+</div>
+
+<br>
+<div id="dadiv">
+    <h3 id="result_gesture_name">Prediction 1-</h3>
+    <h3 id="result_gesture_name2">Prediction 2-</h3>
+</div>
+<br>
+<div id="dudiv">
+    <h4>WEBCAM VIEW-</h4>
+</div>
+<div id="dediv">
+    <h4>SNAPSHOT-</h4>
+</div>
+<div id="webcam"></div>
+<div id="result"></div>
+<br> <br><br><br><br><br><br><br>
+<button id="webcam1" class="btn btn-primary"onclick="takeSnapshot()">Capture Image</button>
+<button id="result1" class="btn btn-success"onclick="result()">Predict</button>
+   </center>  
+
+        <script src="main.js"></script>
+    </body>
+</html>
